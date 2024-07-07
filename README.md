@@ -12,6 +12,13 @@ $ npm install
 
 Copy sample configuration from `.env.sample` to `.env`, review it and configure credentials for database and telegram. It is not recommeded to use it without transactions, but there is such option. Also there is option to skip sending responses by Telegram bot.
 
+Configure Telegram bot webhook to receive messages:
+
+```bash
+https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=<YOUR_DOMAIN>/api/v1/tg/webhook
+
+```
+
 ## Bot commands
 
 - `/start` - display help
